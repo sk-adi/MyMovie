@@ -1,4 +1,5 @@
 import React from 'react'
+import axiosInstance from '../api/Api'
 
 export default function Card() {
     return (

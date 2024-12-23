@@ -5,6 +5,8 @@ import Card from './component/Card';
 import Carousel from './component/Carousel';
 import Pagination from './component/Pagination';
 import Trending from './component/Trending';
+import Popular from './component/Popular';
+import People from './component/People';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <Navbar />
       <Carousel />
       <Trending/>
+      <Popular/>
+      <People/>
       <Pagination/>
 
     </>
