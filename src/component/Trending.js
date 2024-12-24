@@ -24,22 +24,25 @@ export default function Trending() {
     }, []);
 
     return (
-        <div className="container text-center">
-            <h2 className="my-4 text-start">Today's Trending Movies and Shows</h2>
-            <div className="d-flex overflow-auto"
-            style={{whiteSpace:'nowrap',gap:'1rem'}}>
-                {movies.map((movie) => (
-                    <div className="col-md-2">
-                        <div className="card" style={{ width: "18rem;"}}>
-                            <img src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`} className="card-img-top" alt="..." />
-                            <div className="card-body">
-                                <h5 className="card-title fs-6">{movie.title ||movie.name}</h5>
+        <>
+            <div className="container text-center">
+                <h2 className="my-4 text-start">Today's Trending Movies and Shows</h2>
+                <div className="d-flex overflow-auto"
+                    style={{ whiteSpace: 'nowrap', gap: '1rem' }}>
+                    {movies.map((movie) => (
+                        <div className="col-md-2">
+                            <div className="card" style={{ width: "18rem;" }}>
+                                <img src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`} className="card-img-top" alt="..." />
+                                <div className="card-body">
+                                    <h5 className="card-title fs-6">{movie.title || movie.name}</h5>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
 
+                </div>
             </div>
-        </div>
+            
+        </>
     )
 }

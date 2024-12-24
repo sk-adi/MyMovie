@@ -7,6 +7,7 @@ import Pagination from './component/Pagination';
 import Trending from './component/Trending';
 import Popular from './component/Popular';
 import People from './component/People';
+import Details from './component/ShowDetail';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Trending/>
       <Popular/>
       <People/>
+      <Details/>
       <Pagination/>
 
     </>
